@@ -1,1 +1,1 @@
-# stack-python
+# Python Wodby stack

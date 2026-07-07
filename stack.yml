@@ -10,6 +10,8 @@ services:
   links:
   - name: db
     service: postgres
+  - name: redis
+    service: valkey
   - name: sendmail
     service: mailpit
 
@@ -29,15 +31,15 @@ services:
 - name: postgres
   title: PostgreSQL
   service: postgres
-  disabled: true  
+  disabled: true
   volumes:
   - name: data
     size: 20
 
-- name: redis
-  title: Redis
-  service: redis
-  disabled: true  
+- name: valkey
+  title: Valkey
+  service: valkey
+  disabled: true
 
 - name: mailpit
   title: Mailpit
@@ -47,3 +49,14 @@ services:
   disabled: true
   title: OpenSMTPD
   service: opensmtpd
+
+- name: gotenberg
+  required: false
+  disabled: true
+  title: Gotenberg
+  service: gotenberg
+
+- name: cloud-postgres
+  title: Cloud PostgreSQL
+  service: cloud-postgres
+  disabled: true
