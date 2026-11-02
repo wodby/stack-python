@@ -11,6 +11,7 @@ composition for Python.
 
 - [Python stack on Wodby](https://wodby.com/stacks/python)
 - [Browse Wodby application stacks](https://wodby.com/stacks)
+- [Python stack guide](https://wodby.com/docs/2.0/stacks/catalog/python/)
 - [Wodby stack documentation](https://wodby.com/docs/2.0/stacks/)
 - [Stack manifest reference](https://wodby.com/docs/2.0/stacks/template/)
 
